@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopEase – Store</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="shop-page">
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="nav-brand">
+      <span class="brand-logo-sm">🛒</span>
+      <span class="brand-name">ShopEase</span>
+    </div>
+
+    <nav class="nav-links">
+      <a href="#" class="nav-link active">Home</a>
+      <a href="#" class="nav-link">Categories</a>
+      <a href="#" class="nav-link">Deals</a>
+      <a href="#" class="nav-link">About</a>
+    </nav>
+
+    <div class="nav-actions">
+      <div class="search-bar">
+        <span>🔍</span>
+        <input type="text" placeholder="Search products..." id="searchInput" oninput="filterProducts()" />
+      </div>
+      <button class="cart-btn" onclick="toggleCart()">
+        🛒 Cart <span class="cart-badge" id="cartCount">0</span>
+      </button>
+      <div class="user-menu">
+        <span id="userGreeting">Hello, User</span>
+        <button class="btn-logout" onclick="logout()">Logout</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Summer Sale is Live! 🌞</h1>
+      <p>Up to 50% off on thousands of products. Shop now and save big.</p>
+      <button class="btn-hero">Shop Now</button>
+    </div>
+    <div class="hero-badges">
+      <div class="badge">🚚 Free Shipping</div>
+      <div class="badge">🔄 Easy Returns</div>
+      <div class="badge">🔒 Secure Payment</div>
+    </div>
+  </section>
+
+  <!-- Category Filter -->
+  <section class="category-section">
+    <div class="container">
+      <div class="category-filters" id="categoryFilters">
+        <button class="cat-btn active" onclick="filterCategory('all', this)">All</button>
+        <button class="cat-btn" onclick="filterCategory('electronics', this)">Electronics</button>
+        <button class="cat-btn" onclick="filterCategory('fashion', this)">Fashion</button>
+        <button class="cat-btn" onclick="filterCategory('home', this)">Home & Living</button>
+        <button class="cat-btn" onclick="filterCategory('sports', this)">Sports</button>
+        <button class="cat-btn" onclick="filterCategory('books', this)">Books</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Grid -->
+  <section class="products-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Featured Products</h2>
+        <div class="sort-group">
+          <label>Sort by:</label>
+          <select onchange="sortProducts(this.value)">
+            <option value="default">Featured</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+            <option value="rating">Top Rated</option>
+          </select>
+        </div>
+      </div>
+      <div class="products-grid" id="productsGrid"></div>
+      <div class="no-results hidden" id="noResults">No products found.</div>
+    </div>
+  </section>
+
+  <!-- Cart Sidebar -->
+  <div class="cart-overlay hidden" id="cartOverlay" onclick="toggleCart()"></div>
+  <aside class="cart-sidebar hidden" id="cartSidebar">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button onclick="toggleCart()" class="close-btn">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <div class="cart-empty">Your cart is empty 🛒</div>
+    </div>
+    <div class="cart-footer" id="cartFooter" style="display:none">
+      <div class="cart-total">
+        <span>Total:</span>
+        <strong id="cartTotal">$0.00</strong>
+      </div>
+      <button class="btn-primary" onclick="checkout()">Checkout</button>
+    </div>
+  </aside>
+
+  <!-- Toast Notification -->
+  <div class="toast hidden" id="toast"></div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span>🛒 ShopEase</span>
+        <p>Quality products delivered to your door.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+        <a href="#">FAQ</a>
+      </div>
+      <div class="footer-links">
+        <h4>Support</h4>
+        <a href="#">Shipping Policy</a>
+        <a href="#">Returns</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 ShopEase. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
