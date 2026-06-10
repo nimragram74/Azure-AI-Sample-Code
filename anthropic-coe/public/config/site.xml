@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  site.xml — Global, configurable branding & navigation for the Anthropic COE Portal.
+  Edit values here to re-theme or re-label the portal without touching React code.
+-->
+<site>
+  <brand>
+    <organization>Wipro</organization>
+    <product>Anthropic COE</product>
+    <tagline>Center of Excellence for Claude &amp; Enterprise AI</tagline>
+    <!-- Theme tokens are injected as CSS variables at runtime -->
+    <theme>
+      <primary>#CC785C</primary>
+      <primaryDark>#A85638</primaryDark>
+      <ink>#191919</ink>
+      <cream>#F0EEE6</cream>
+      <paper>#FAF9F5</paper>
+      <accent>#5A4FCF</accent>
+      <accentSoft>#EAE7FB</accentSoft>
+    </theme>
+  </brand>
+
+  <nav>
+    <item href="#home" label="Home" />
+    <item href="#features" label="Capabilities" />
+    <item href="#training" label="Training" />
+    <item href="#certifications" label="Certifications" />
+    <item href="#updates" label="Updates" />
+    <item href="#practices" label="Best Practices" />
+    <item href="#offerings" label="For Customers" />
+  </nav>
+
+  <hero>
+    <eyebrow>Wipro × Anthropic — Center of Excellence</eyebrow>
+    <title highlight="Claude">Build the future of enterprise AI with</title>
+    <subtitle>
+      A single home for everything Anthropic at Wipro — curated learning paths,
+      certifications, engineering best practices, the latest model updates, and
+      proven blueprints to help our customers ship safe, useful AI.
+    </subtitle>
+    <primaryCta label="Start Learning" href="#training" />
+    <secondaryCta label="Explore Customer Solutions" href="#offerings" />
+    <stats>
+      <stat value="4" suffix="" label="Guided learning tracks" />
+      <stat value="6" suffix="" label="Certification milestones" />
+      <stat value="40" suffix="+" label="Reusable best practices" />
+      <stat value="12" suffix="+" label="Customer accelerators" />
+    </stats>
+  </hero>
+
+  <features>
+    <heading>One portal. Every capability.</heading>
+    <subheading>The COE brings the whole Claude practice together under one roof.</subheading>
+    <feature icon="bi-mortarboard-fill" title="Guided Learning">
+      Role-based tracks for developers, architects and business teams — from first prompt to production agents.
+    </feature>
+    <feature icon="bi-patch-check-fill" title="Certifications">
+      Track and validate Claude &amp; agent-building skills with recognised internal and Anthropic credentials.
+    </feature>
+    <feature icon="bi-lightbulb-fill" title="Best Practices">
+      Battle-tested patterns for prompting, tool use, evals, safety and cost — curated by the COE.
+    </feature>
+    <feature icon="bi-rss-fill" title="Live Updates &amp; Feeds">
+      Model releases, research, and COE announcements aggregated so you never miss what matters.
+    </feature>
+    <feature icon="bi-rocket-takeoff-fill" title="Customer Accelerators">
+      Reusable solution blueprints that turn Claude's capabilities into measurable customer value.
+    </feature>
+    <feature icon="bi-shield-lock-fill" title="Responsible AI">
+      Governance, safety and evaluation guardrails baked into everything we build.
+    </feature>
+  </features>
+
+  <footer>
+    <about>The Anthropic COE is Wipro's specialised practice for designing, building and scaling enterprise solutions on Claude — responsibly and at speed.</about>
+    <column title="Portal">
+      <link href="#training" label="Training" />
+      <link href="#certifications" label="Certifications" />
+      <link href="#practices" label="Best Practices" />
+      <link href="#updates" label="Updates" />
+    </column>
+    <column title="Anthropic">
+      <link href="https://www.anthropic.com" label="Anthropic.com" />
+      <link href="https://docs.claude.com" label="Claude Docs" />
+      <link href="https://www.anthropic.com/research" label="Research" />
+      <link href="https://www.anthropic.com/news" label="News" />
+    </column>
+    <column title="Wipro">
+      <link href="https://www.wipro.com/artificial-intelligence/" label="Wipro AI" />
+      <link href="https://www.wipro.com" label="Wipro.com" />
+      <link href="#offerings" label="Customer Solutions" />
+      <link href="mailto:anthropic.coe@wipro.com" label="Contact the COE" />
+    </column>
+    <legal>© 2026 Wipro Limited. Anthropic, Claude and related marks are property of Anthropic, PBC. Built by the Wipro Anthropic COE.</legal>
+  </footer>
+</site>

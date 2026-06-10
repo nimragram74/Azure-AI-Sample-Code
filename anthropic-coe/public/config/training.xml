@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- training.xml — Configurable learning tracks & courses. Add a <track> or <course> to extend. -->
+<training>
+  <heading>Learning paths for every role</heading>
+  <subheading>Start where you are. Each track stacks into the next.</subheading>
+
+  <track id="foundations" level="Foundational" icon="bi-flag-fill" duration="~4 hrs">
+    <name>Claude Foundations</name>
+    <summary>Understand what Claude is, how it reasons, and how to talk to it effectively.</summary>
+    <course title="Introduction to Claude" provider="Anthropic Academy" minutes="45" href="https://www.anthropic.com/learn" />
+    <course title="Prompt Engineering Essentials" provider="Claude Docs" minutes="60" href="https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/overview" />
+    <course title="Working with the Claude API" provider="Claude Docs" minutes="50" href="https://docs.claude.com/en/api/overview" />
+    <course title="Models &amp; choosing the right one" provider="Claude Docs" minutes="30" href="https://docs.claude.com/en/docs/about-claude/models/overview" />
+  </track>
+
+  <track id="developer" level="Intermediate" icon="bi-code-slash" duration="~8 hrs">
+    <name>Building with Claude</name>
+    <summary>Go hands-on: tool use, structured outputs, RAG and streaming in real apps.</summary>
+    <course title="Tool Use &amp; Function Calling" provider="Claude Docs" minutes="75" href="https://docs.claude.com/en/docs/agents-and-tools/tool-use/overview" />
+    <course title="Prompt Caching &amp; Cost Optimisation" provider="Claude Docs" minutes="40" href="https://docs.claude.com/en/docs/build-with-claude/prompt-caching" />
+    <course title="Retrieval-Augmented Generation" provider="COE Workshop" minutes="90" href="https://docs.claude.com/en/docs/build-with-claude/embeddings" />
+    <course title="Streaming &amp; Token Counting" provider="Claude Docs" minutes="35" href="https://docs.claude.com/en/docs/build-with-claude/streaming" />
+  </track>
+
+  <track id="agents" level="Advanced" icon="bi-robot" duration="~10 hrs">
+    <name>Agents &amp; the Claude Agent SDK</name>
+    <summary>Design multi-step agents, MCP integrations and Claude Code workflows.</summary>
+    <course title="Agent Design Patterns" provider="Anthropic Engineering" minutes="80" href="https://www.anthropic.com/engineering/building-effective-agents" />
+    <course title="Model Context Protocol (MCP)" provider="MCP Docs" minutes="70" href="https://modelcontextprotocol.io" />
+    <course title="Claude Agent SDK Deep-Dive" provider="Claude Docs" minutes="120" href="https://docs.claude.com/en/api/agent-sdk/overview" />
+    <course title="Claude Code for Engineering Teams" provider="COE Lab" minutes="90" href="https://code.claude.com/docs" />
+  </track>
+
+  <track id="enterprise" level="Leadership" icon="bi-buildings-fill" duration="~5 hrs">
+    <name>Enterprise &amp; Responsible AI</name>
+    <summary>Governance, evaluation, security and the business case for Claude at scale.</summary>
+    <course title="Building Evals &amp; Test Suites" provider="Claude Docs" minutes="60" href="https://docs.claude.com/en/docs/test-and-evaluate/eval-tool" />
+    <course title="Safety, Guardrails &amp; Red-Teaming" provider="Anthropic Safety" minutes="55" href="https://www.anthropic.com/safety" />
+    <course title="Enterprise Deployment Patterns" provider="COE Playbook" minutes="50" href="https://docs.claude.com/en/docs/build-with-claude/define-success" />
+    <course title="The Economics of AI Adoption" provider="COE Briefing" minutes="40" href="https://www.anthropic.com/enterprise" />
+  </track>
+</training>

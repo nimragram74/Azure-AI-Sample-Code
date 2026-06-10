@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- bestpractices.xml — Configurable best-practice playbook, grouped by category. -->
+<practices>
+  <heading>Best practices for Claude</heading>
+  <subheading>The COE's distilled playbook for building things that work in production.</subheading>
+
+  <category id="prompting" name="Prompting" icon="bi-chat-square-text-fill">
+    <practice title="Be clear, direct and contextual">
+      Treat Claude like a brilliant new teammate: state the goal, the audience and the format. Ambiguity in, ambiguity out.
+    </practice>
+    <practice title="Use XML tags to structure prompts">
+      Wrap instructions, context and examples in tags like &lt;context&gt; and &lt;example&gt; so Claude can parse intent reliably.
+    </practice>
+    <practice title="Give Claude room to think">
+      For hard problems, ask for step-by-step reasoning before the final answer to improve accuracy.
+    </practice>
+    <practice title="Show, don't just tell">
+      A few high-quality examples (multishot prompting) beat paragraphs of abstract instructions.
+    </practice>
+  </category>
+
+  <category id="agents" name="Agents &amp; Tools" icon="bi-robot">
+    <practice title="Start simple, add agency only when needed">
+      Prefer a single well-prompted call or a fixed workflow before reaching for a fully autonomous agent.
+    </practice>
+    <practice title="Write tools like good APIs">
+      Clear names, typed parameters and rich descriptions make tool use dramatically more reliable.
+    </practice>
+    <practice title="Keep the human in the loop">
+      For irreversible or outward-facing actions, design explicit confirmation steps.
+    </practice>
+    <practice title="Adopt MCP for integrations">
+      Use the Model Context Protocol to connect tools and data sources in a portable, reusable way.
+    </practice>
+  </category>
+
+  <category id="quality" name="Evals &amp; Quality" icon="bi-clipboard2-check-fill">
+    <practice title="Define success before you build">
+      Write down measurable criteria and a representative test set first — then iterate against it.
+    </practice>
+    <practice title="Automate evaluations">
+      Use code-graded and model-graded evals so quality is measured, not guessed, on every change.
+    </practice>
+    <practice title="Test the edges">
+      Include adversarial, ambiguous and empty inputs in your eval set, not just the happy path.
+    </practice>
+  </category>
+
+  <category id="ops" name="Cost, Safety &amp; Ops" icon="bi-shield-lock-fill">
+    <practice title="Cache long, stable context">
+      Use prompt caching for system prompts and documents to cut latency and cost significantly.
+    </practice>
+    <practice title="Right-size the model">
+      Match model to task — reserve the most capable models for genuinely hard reasoning.
+    </practice>
+    <practice title="Design for safety by default">
+      Add input/output guardrails and least-privilege tool access from day one, not as an afterthought.
+    </practice>
+  </category>
+</practices>

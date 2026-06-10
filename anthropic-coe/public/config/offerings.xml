@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- offerings.xml — Configurable "How Wipro can help customers" solutions & engagement model. -->
+<offerings>
+  <heading>How Wipro helps customers with Claude</heading>
+  <subheading>From first proof-of-value to enterprise-scale rollout — accelerators backed by the COE.</subheading>
+
+  <solution id="discovery" icon="bi-compass-fill" outcome="2–3 weeks to a prioritised roadmap">
+    <name>AI Value Discovery</name>
+    <description>Workshops that map high-value use cases to Claude's strengths, with a feasibility and ROI scorecard.</description>
+    <industry>Cross-industry</industry>
+  </solution>
+
+  <solution id="agents" icon="bi-robot" outcome="Working agent in 4–6 weeks">
+    <name>Agentic Automation</name>
+    <description>Multi-step Claude agents that automate knowledge work — service ops, research, document processing — with MCP integrations.</description>
+    <industry>BFSI · Telecom · Manufacturing</industry>
+  </solution>
+
+  <solution id="knowledge" icon="bi-search-heart-fill" outcome="Grounded answers on day one">
+    <name>Enterprise Knowledge Assistant</name>
+    <description>Secure RAG assistants over your documents and systems, with citations, guardrails and audit trails.</description>
+    <industry>Healthcare · Public Sector · Energy</industry>
+  </solution>
+
+  <solution id="modernize" icon="bi-code-square" outcome="Up to 40% faster delivery">
+    <name>Engineering Acceleration</name>
+    <description>Claude Code and the Agent SDK embedded into SDLC — code modernisation, test generation and migration at scale.</description>
+    <industry>Technology · Retail</industry>
+  </solution>
+
+  <solution id="contact" icon="bi-headset" outcome="Higher CSAT, lower handle time">
+    <name>Intelligent Customer Experience</name>
+    <description>Claude-powered support copilots and self-service that resolve faster while keeping humans in control.</description>
+    <industry>Retail · Travel · BFSI</industry>
+  </solution>
+
+  <solution id="governance" icon="bi-shield-check" outcome="Audit-ready from the start">
+    <name>Responsible AI &amp; Governance</name>
+    <description>Frameworks for safety, evaluation, compliance and monitoring so AI scales with confidence.</description>
+    <industry>Regulated industries</industry>
+  </solution>
+
+  <engagement>
+    <step number="1" title="Discover">Identify and prioritise high-value, feasible use cases.</step>
+    <step number="2" title="Prototype">Build a Claude proof-of-value against real data in weeks.</step>
+    <step number="3" title="Industrialise">Harden with evals, guardrails, security and CI/CD.</step>
+    <step number="4" title="Scale">Roll out across the enterprise with COE governance and enablement.</step>
+  </engagement>
+
+  <contact>
+    <text>Ready to explore what Claude can do for your organisation?</text>
+    <ctaLabel>Talk to the Anthropic COE</ctaLabel>
+    <ctaHref>mailto:anthropic.coe@wipro.com</ctaHref>
+  </contact>
+</offerings>
