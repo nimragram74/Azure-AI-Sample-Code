@@ -38,7 +38,21 @@ accents, and reveal-on-scroll motion).
 Want to add a course, a new certification, or re-theme the portal? Just edit the
 relevant XML file and refresh — the UI updates itself.
 
-## 🚀 Getting started
+## ⚡ Just want to open it? (no npm, no build, no server)
+
+Open **`anthropic-coe-portal.html`** — a single, fully **self-contained** file.
+Double-click it (or drag it into any browser) and it runs. React, Bootstrap, the
+icon font, all styles, the app, and every XML config are embedded inside the one
+file, so it works **offline** with no install and no web server.
+
+> Regenerate it after editing the source/XML with:
+> `node standalone/build-standalone.mjs`
+> (JSX is pre-compiled with esbuild and libraries are vendored from `node_modules`.)
+
+The full Vite project below is the developer experience (hot reload, separate
+files); the single HTML is the portable, hand-it-to-anyone deliverable.
+
+## 🚀 Getting started (dev project)
 
 ```bash
 cd anthropic-coe
