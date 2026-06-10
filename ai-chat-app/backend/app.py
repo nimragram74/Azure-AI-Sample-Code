@@ -1,4 +1,5 @@
 import os
+import httpx
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import anthropic
@@ -6,7 +7,12 @@ import anthropic
 app = Flask(__name__)
 CORS(app)  # Allow React frontend to call this API
 
-client = anthropic.Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY"))
+# Use a custom httpx client that skips SSL verification (needed for corporate proxies)
+http_client = httpx.Client(verify=False)
+client = anthropic.Anthropic(
+    api_key=os.environ.get("ANTHROPIC_API_KEY"),
+    http_client=http_client
+)
 
 @app.route("/chat", methods=["POST"])
 def chat():
