@@ -1,0 +1,14 @@
+{
+  "name": "bucks2bar",
+  "version": "1.0.0",
+  "description": "A project that utilizes Bootstrap for styling and layout.",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "live-server src"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.0"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}

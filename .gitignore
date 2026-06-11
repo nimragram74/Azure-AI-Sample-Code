@@ -1,0 +1,21 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+Env/
+
+# OS / editor cruft
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# OneDrive
+*.tmp
+~$*
