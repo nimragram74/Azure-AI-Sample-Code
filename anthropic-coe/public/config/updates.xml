@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- updates.xml — Configurable "Latest Updates & Feeds". Newest first. -->
+<updates>
+  <heading>Latest updates &amp; feeds</heading>
+  <subheading>Model releases, research and COE announcements — curated so you stay current.</subheading>
+
+  <feed id="models" label="Model &amp; Product" />
+  <feed id="research" label="Research" />
+  <feed id="coe" label="COE News" />
+
+  <item feed="coe" date="2026-06-08" tag="COE" featured="true">
+    <title>COE launches the Anthropic Portal</title>
+    <summary>Your new single home for training, certifications, best practices and customer accelerators — now live for all Wipro practitioners.</summary>
+    <link href="#home" label="Explore the portal" />
+  </item>
+
+  <item feed="models" date="2026-05-22" tag="Model">
+    <title>Claude Opus 4.8 &amp; the Claude 4.X family</title>
+    <summary>The latest, most capable Claude models — stronger reasoning, agentic coding and tool use. Default to these for new enterprise builds.</summary>
+    <link href="https://docs.claude.com/en/docs/about-claude/models/overview" label="Read the model overview" />
+  </item>
+
+  <item feed="research" date="2026-05-05" tag="Research">
+    <title>Advances in interpretability &amp; alignment</title>
+    <summary>New research on understanding model internals and steering behaviour — foundational to how the COE designs safe systems.</summary>
+    <link href="https://www.anthropic.com/research" label="Browse research" />
+  </item>
+
+  <item feed="models" date="2026-04-18" tag="Tooling">
+    <title>Claude Agent SDK &amp; MCP momentum</title>
+    <summary>Building agents is easier than ever with the Agent SDK and a growing ecosystem of Model Context Protocol servers.</summary>
+    <link href="https://docs.claude.com/en/api/agent-sdk/overview" label="Build an agent" />
+  </item>
+
+  <item feed="coe" date="2026-04-02" tag="Event">
+    <title>Internal Hackathon: "Agents for Good"</title>
+    <summary>48 hours, 30 teams, dozens of working Claude agents solving real customer problems. Recordings and winning patterns now in Best Practices.</summary>
+    <link href="#practices" label="See the patterns" />
+  </item>
+
+  <item feed="research" date="2026-03-15" tag="Safety">
+    <title>Responsible Scaling Policy update</title>
+    <summary>How Anthropic frames safety as capabilities grow — required reading for architects pursuing the Solution Architect credential.</summary>
+    <link href="https://www.anthropic.com/safety" label="Read the policy" />
+  </item>
+</updates>

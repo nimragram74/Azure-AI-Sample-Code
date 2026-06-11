@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- certifications.xml — Configurable certification milestones for the COE. -->
+<certifications>
+  <heading>Certify your Claude expertise</heading>
+  <subheading>Stackable credentials that prove real, applied skill — recognised across the practice.</subheading>
+
+  <cert id="cca" tier="Associate" icon="bi-patch-check-fill" duration="2 weeks" badge="#CC785C">
+    <name>Certified Claude Associate</name>
+    <focus>Prompting, API fundamentals, responsible use</focus>
+    <description>Demonstrate you can build a reliable single-turn or chat application on Claude and reason about model selection.</description>
+    <requirement>Complete the Claude Foundations track</requirement>
+    <requirement>Pass the 40-question knowledge assessment</requirement>
+    <requirement>Submit one working prototype</requirement>
+    <cta label="View criteria" href="https://www.anthropic.com/learn" />
+  </cert>
+
+  <cert id="ccd" tier="Developer" icon="bi-code-square" duration="4 weeks" badge="#5A4FCF">
+    <name>Certified Claude Developer</name>
+    <focus>Tool use, RAG, structured outputs, evals</focus>
+    <description>Prove you can ship a production-grade Claude application with tools, retrieval and a test suite.</description>
+    <requirement>Hold the Associate credential</requirement>
+    <requirement>Complete the Building with Claude track</requirement>
+    <requirement>Pass the practical build challenge</requirement>
+    <cta label="View criteria" href="https://docs.claude.com/en/api/overview" />
+  </cert>
+
+  <cert id="cae" tier="Expert" icon="bi-robot" duration="6 weeks" badge="#191919">
+    <name>Certified Agent Engineer</name>
+    <focus>Multi-step agents, MCP, Claude Agent SDK</focus>
+    <description>Design, build and evaluate autonomous agents with tool orchestration and MCP integrations.</description>
+    <requirement>Hold the Developer credential</requirement>
+    <requirement>Complete the Agents &amp; Agent SDK track</requirement>
+    <requirement>Deliver a capstone agent with evals</requirement>
+    <cta label="View criteria" href="https://www.anthropic.com/engineering/building-effective-agents" />
+  </cert>
+
+  <cert id="csa" tier="Architect" icon="bi-diagram-3-fill" duration="8 weeks" badge="#A85638">
+    <name>Certified Solution Architect</name>
+    <focus>Enterprise architecture, security, scale</focus>
+    <description>Architect secure, cost-aware, multi-tenant Claude solutions for regulated enterprises.</description>
+    <requirement>Hold the Agent Engineer credential</requirement>
+    <requirement>Complete the Enterprise &amp; Responsible AI track</requirement>
+    <requirement>Pass architecture review board</requirement>
+    <cta label="View criteria" href="https://www.anthropic.com/enterprise" />
+  </cert>
+</certifications>
