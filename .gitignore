@@ -19,3 +19,10 @@ Desktop.ini
 # OneDrive
 *.tmp
 ~$*
+
+# Claude Code session transcripts (may contain secrets pasted in chat)
+*.jsonl
+session-*.jsonl
+
+# Secrets
+.env

@@ -1,0 +1,8 @@
+# Never commit secrets or local env
+.env
+.venv/
+__pycache__/
+*.pyc
+
+# runtime logs
+*.log

@@ -1,0 +1,5 @@
+openai>=1.40.0
+azure-identity>=1.17.0
+python-dotenv>=1.0.1
+streamlit>=1.37.0
+truststore>=0.9.1  # use the Windows cert store so corporate TLS-inspection CAs are trusted
